@@ -1,8 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Илья Черепанов](https://up.htmlacademy.ru/htmlcss-individual/2/user/1888439).
-* Наставник: [Ирина Антипина](https://htmlacademy.ru/profile/id2108789).
-* Сайт: [Седона](https://ilya-cherepanov.github.io/1888439-sedona-2).
+* Наставник: `Неизвестно`.
 
 ---
 
