@@ -54,7 +54,11 @@
                 <h3 class="advantage__title">Настоящий городок</h3>
                 <p class="advantage__description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
-              <img class="advantage__image" src="images/city.jpg" alt="Город Седона" width="800" height="385">
+              <picture>
+                <source type="image/avif" srcset="images/city.avif 1x, images/city@2x.avif 2x">
+                <source type="image/webp" srcset="images/city.webp 1x, images/city@2x.webp 2x">
+                <img class="advantage__image" src="images/city.jpg" srcset="images/city@2x.jpg 2x" alt="Город Седона" width="800" height="385">
+              </picture>
             </div>
           </li>
           <li class="advantages__item">
@@ -87,7 +91,11 @@
                 <h3 class="advantage__title">Там есть мост дьявола</h3>
                 <p class="advantage__description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
               </div>
-              <img class="advantage__image advantage__image--left" src="images/devils-bridge.jpg" alt="Мост дьявола" width="800" height="385">
+              <picture>
+                <source type="image/avif" srcset="images/devils-bridge.avif 1x, images/devils-bridge@2x.avif 2x">
+                <source type="image/webp" srcset="images/devils-bridge.webp 1x, images/devils-bridge@2x.webp 2x">
+                <img class="advantage__image advantage__image--left" src="images/devils-bridge.jpg" srcset="images/devils-bridge@2x.jpg 2x" alt="Мост дьявола" width="800" height="385">
+              </picture>
             </div>
           </li>
         </ul>
