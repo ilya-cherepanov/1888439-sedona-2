@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
+    <link rel="stylesheet" href="styles/style.css">
   </head>
 
-  <body>
-    <header class="page-header" data-test="header">
+  <body class="page page--main">
+    <header class="page__header page-header" data-test="header">
       <a class="page-header__logo logo">
         <img class="logo__img" src="images/sedona-logo.svg" alt="Логотип сайта" width="140" height="70">
       </a>
@@ -23,38 +24,40 @@
           </li>
         </ul>
       </nav>
-      <a class="page-header__action header-action" href="#">
+      <a class="page-header__action header-action header-action--search" href="#">
         <span class="visually-hidden">Поиск</span>
       </a>
-      <a class="page-header__action header-action" href="#">
+      <a class="page-header__action header-action header-action--favorites" href="#">
         <span class="visually-hidden">Избранное</span>
-        <span class="header-action__counter">
+        <sup class="header-action__counter">
           <span class="visually-hidden">У вас в избранном </span>12<span class="visually-hidden"> гостиниц</span>
-        </span>
+        </sup>
       </a>
-      <a class="btn btn--brown" href="#">Хочу сюда</a>
+      <a class="btn btn--brown" href="#">Хочу сюда!</a>
     </header>
 
     <main data-test="main">
       <hgroup class="page-heading">
-        <h1 class="page-heading__title visually-hidden">Седона</h1>
-        <p class="page-title__slogan">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+        <h1 class="visually-hidden">Седона</h1>
+        <p class="page-heading__slogan">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
       </hgroup>
 
       <div class="hero" data-test="hero">
-        <picture>
+        <picture class="hero__image-wrapper">
           <source type="image/avif" srcset="images/hero-background.avif 1x, images/hero-background@2x.avif 2x">
           <source type="image/webp" srcset="images/hero-background.webp 1x, images/hero-background@2x.webp 2x">
           <img class="hero__image" src="images/hero-background.jpg" srcset="images/hero-background@2x.jpg 2x" alt="Каньон Седоны" width="1200" height="485">
         </picture>
-        <img class="hero__description" src="images/welcome.svg" lang="en" alt="Welcome to the gorgeous Sedona! 'Because the Grand Canyon sucks!'" width="458" height="352">
+        <div class="hero__content">
+          <img class="hero__description" src="images/welcome.svg" lang="en" alt="Welcome to the gorgeous Sedona! 'Because the Grand Canyon sucks!'" width="458" height="352">
+        </div>
       </div>
 
       <section class="advantages" data-test="advantages">
         <h2 class="advantages__title">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</h2>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--large">
-            <div class="advantage">
+            <div class="advantage advantage--dark">
               <div class="advantage__content">
                 <h3 class="advantage__title">Настоящий городок</h3>
                 <p class="advantage__description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
@@ -75,7 +78,7 @@
             </div>
           </li>
           <li class="advantages__item">
-            <div class="advantage">
+            <div class="advantage advantage--mid-light">
               <div class="advantage__content">
                 <h3 class="advantage__title">Красивая дорога</h3>
                 <p class="advantage__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
@@ -91,7 +94,7 @@
             </div>
           </li>
           <li class="advantages__item advantages__item--large">
-            <div class="advantage">
+            <div class="advantage advantage--dark">
               <div class="advantage__content">
                 <h3 class="advantage__title">Там есть мост дьявола</h3>
                 <p class="advantage__description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
@@ -111,19 +114,19 @@
         <p class="services__staff">Опытный персонал и качественное обслуживание!</p>
         <ul class="services__list">
           <li class="services__item">
-            <div class="service">
+            <div class="service service--dark service--housing">
               <h3 class="service__title">Жильё</h3>
               <p class="service__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </div>
           </li>
           <li class="services__item">
-            <div class="service">
+            <div class="service service--eating">
               <h3 class="service__title">Еда</h3>
               <p class="service__description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
             </div>
           </li>
           <li class="services__item">
-            <div class="service">
+            <div class="service service--dark service--souvenir">
               <h3 class="service__title">Сувениры</h3>
               <p class="service__description">Не только китайского, но и настоящего местного производства!</p>
             </div>
