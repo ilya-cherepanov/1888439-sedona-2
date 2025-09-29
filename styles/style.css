@@ -32,9 +32,11 @@ body {
 
   font-family: "PT Sans", sans-serif;
   color: #333333;
-  size: 22px;
+  font-size: 22px;
   line-height: 26px;
 }
+
+/* page */
 
 .page {
   display: flex;
@@ -365,12 +367,14 @@ body {
 
 .subscription__email-input {
   border: none;
+
+  font-size: 18px;
+  line-height: 24px;
+
   background-color: #f2f2f2;
 }
 
 .subscription__email-input::placeholder {
-  font-size: 18px;
-  line-height: 24px;
   color: #616161;
 }
 
@@ -555,10 +559,6 @@ body {
 /* offers */
 
 .offers {
-  display: grid;
-  grid-template-columns: 450px 1fr 1fr;
-  align-items: center;
-  column-gap: 70px;
   padding-block: 50px 60px;
   padding-inline: 70px;
 
@@ -566,7 +566,15 @@ body {
   color: #333333;
 }
 
+.offers__heading {
+  display: flex;
+  align-items: center;
+}
+
 .offers__title {
+  margin-inline-end: auto;
+  max-inline-size: 450px;
+
   font-size: 30px;
   line-height: 36px;
   color: #000000;
@@ -574,6 +582,8 @@ body {
 }
 
 .offers__order {
+  margin-inline-end: 70px;
+
   font-size: 18px;
   line-height: 21px;
 }
@@ -581,7 +591,6 @@ body {
 .offers__list {
   display: flex;
   flex-wrap: wrap;
-  grid-column: 1 / -1;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -594,10 +603,6 @@ body {
 
 .offers__item:nth-child(3n) {
   margin-inline-end: 0;
-}
-
-.offers__pagination {
-  grid-column: 1 / -1;
 }
 
 /* offer */
