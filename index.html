@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="styles/style.css">
   </head>
 
-  <body class="page page--main">
+  <body class="page page--index">
     <header class="page__header page-header" data-test="header">
-      <a class="page-header__logo logo">
+      <a class="page-header__logo logo" href="index.html" aria-current="page">
         <img class="logo__img" src="images/sedona-logo.svg" alt="Логотип сайта" width="140" height="70">
       </a>
       <nav class="page-header__navigation main-navigation">
@@ -36,13 +36,13 @@
       <a class="btn btn--brown" href="#">Хочу сюда!</a>
     </header>
 
-    <main data-test="main">
+    <main class="page__main" data-test="main">
       <hgroup class="page-heading">
         <h1 class="visually-hidden">Седона</h1>
         <p class="page-heading__slogan">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
       </hgroup>
 
-      <div class="hero" data-test="hero">
+      <div class="page__hero hero" data-test="hero">
         <picture class="hero__image-wrapper">
           <source type="image/avif" srcset="images/hero-background.avif 1x, images/hero-background@2x.avif 2x">
           <source type="image/webp" srcset="images/hero-background.webp 1x, images/hero-background@2x.webp 2x">
@@ -95,14 +95,14 @@
           </li>
           <li class="advantages__item advantages__item--large">
             <div class="advantage advantage--dark">
-              <div class="advantage__content">
+              <div class="advantage__content advantage__content--end">
                 <h3 class="advantage__title">Там есть мост дьявола</h3>
                 <p class="advantage__description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
               </div>
               <picture>
                 <source type="image/avif" srcset="images/devils-bridge.avif 1x, images/devils-bridge@2x.avif 2x">
                 <source type="image/webp" srcset="images/devils-bridge.webp 1x, images/devils-bridge@2x.webp 2x">
-                <img class="advantage__image advantage__image--left" src="images/devils-bridge.jpg" srcset="images/devils-bridge@2x.jpg 2x" alt="Мост дьявола" width="800" height="385">
+                <img class="advantage__image" src="images/devils-bridge.jpg" srcset="images/devils-bridge@2x.jpg 2x" alt="Мост дьявола" width="800" height="385">
               </picture>
             </div>
           </li>
