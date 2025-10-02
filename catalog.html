@@ -33,7 +33,7 @@
           <span class="visually-hidden">У вас в избранном </span>12<span class="visually-hidden"> гостиниц</span>
         </sup>
       </a>
-      <a class="btn btn--brown" href="#">Хочу сюда!</a>
+      <a class="btn" href="#">Хочу сюда!</a>
     </header>
 
     <main class="page__main" data-test="main">
@@ -120,8 +120,10 @@
               </div>
             </fieldset>
 
-            <button class="filters__submit btn" type="submit">Применить</button>
-            <button class="filters__reset" type="reset">Сбросить</button>
+            <div class="filters__buttons">
+              <button class="filters__submit btn" type="submit">Применить</button>
+              <button class="filters__reset" type="reset">Сбросить</button>
+            </div>
           </form>
         </section>
       </div>
@@ -169,8 +171,8 @@
               </a>
               <p class="offer__housing-type">Гостиница</p>
               <p class="offer__price">От 4000 ₽</p>
-              <a class="offer__more-btn btn btn--brown" href="#">Подробнее</a>
-              <button class="offer__favorite-btn btn" type="button">В избранное</button>
+              <a class="offer__more-btn btn" href="#">Подробнее</a>
+              <button class="offer__favorite-btn btn btn--secondary" type="button">В избранное</button>
               <p class="offer__stars">
                 <span class="visually-hidden">4 звезды</span>
                 <span class="offer__star"></span>
@@ -195,7 +197,7 @@
               </a>
               <p class="offer__housing-type">Гостиница</p>
               <p class="offer__price">От 5000 ₽</p>
-              <a class="offer__more-btn btn btn--brown" href="#">Подробнее</a>
+              <a class="offer__more-btn btn" href="#">Подробнее</a>
               <button class="offer__favorite-btn btn btn--selected" type="button">В избранном</button>
               <p class="offer__stars">
                 <span class="visually-hidden">4 звезды</span>
@@ -221,8 +223,8 @@
               </a>
               <p class="offer__housing-type">Гостиница</p>
               <p class="offer__price">От 2500 ₽</p>
-              <a class="offer__more-btn btn btn--brown" href="#">Подробнее</a>
-              <button class="offer__favorite-btn btn" type="button">В избранное</button>
+              <a class="offer__more-btn btn" href="#">Подробнее</a>
+              <button class="offer__favorite-btn btn btn--secondary" type="button">В избранное</button>
               <p class="offer__stars">
                 <span class="visually-hidden">3 звезды</span>
                 <span class="offer__star"></span>
@@ -246,8 +248,8 @@
               </a>
               <p class="offer__housing-type">Гостиница</p>
               <p class="offer__price">От 1500 ₽</p>
-              <a class="offer__more-btn btn btn--brown" href="#">Подробнее</a>
-              <button class="offer__favorite-btn btn" type="button">В избранное</button>
+              <a class="offer__more-btn btn" href="#">Подробнее</a>
+              <button class="offer__favorite-btn btn btn--secondary" type="button">В избранное</button>
               <p class="offer__stars">
                 <span class="visually-hidden">2 звезды</span>
                 <span class="offer__star"></span>
@@ -262,22 +264,22 @@
           <h3 class="visually-hidden">Пагинация</h3>
           <ul class="pagination__list">
             <li class="pagination__item">
-              <a class="btn btn--pagination-active">1</a>
+              <a class="btn btn--large btn--pagination-active">1</a>
             </li>
             <li class="pagination__item">
-              <a class="btn" href="#">2</a>
+              <a class="btn btn--large btn--secondary" href="#">2</a>
             </li>
             <li class="pagination__item">
-              <a class="btn" href="#">3</a>
+              <a class="btn btn--large btn--secondary" href="#">3</a>
             </li>
             <li class="pagination__item">
-              <a class="btn" href="#">4</a>
+              <a class="btn btn--large btn--secondary" href="#">4</a>
             </li>
             <li class="pagination__item">
               <a class="pagination__ellipsis">&hellip;</a>
             </li>
             <li class="pagination__item">
-              <a class="btn" href="#">10</a>
+              <a class="btn btn--large btn--secondary" href="#">10</a>
             </li>
           </ul>
         </nav>
@@ -289,7 +291,7 @@
         <form class="subscription__form" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="subscription-email">Электронная почта: </label>
           <input class="subscription__email-input" type="email" name="subscription-email" id="subscription-email" placeholder="Ваш e-mail" required>
-          <button class="subscription__submit btn btn--mid" type="submit">Подписаться</button>
+          <button class="subscription__submit btn btn--mid btn--secondary" type="submit">Подписаться</button>
         </form>
       </section>
     </main>

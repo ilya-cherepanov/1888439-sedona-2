@@ -33,11 +33,11 @@
           <span class="visually-hidden">У вас в избранном </span>12<span class="visually-hidden"> гостиниц</span>
         </sup>
       </a>
-      <a class="btn btn--brown" href="#">Хочу сюда!</a>
+      <a class="btn" href="#">Хочу сюда!</a>
     </header>
 
     <main class="page__main" data-test="main">
-      <hgroup class="page-heading">
+      <hgroup class="page__heading page-heading">
         <h1 class="visually-hidden">Седона</h1>
         <p class="page-heading__slogan">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
       </hgroup>
@@ -53,7 +53,7 @@
         </div>
       </div>
 
-      <section class="advantages" data-test="advantages">
+      <section class="page__advantages advantages" data-test="advantages">
         <h2 class="advantages__title">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</h2>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--large">
@@ -109,7 +109,7 @@
         </ul>
       </section>
 
-      <section class="services">
+      <section class="page__services services">
         <h2 class="services__title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
         <p class="services__staff">Опытный персонал и качественное обслуживание!</p>
         <ul class="services__list">
@@ -137,7 +137,7 @@
       <section class="booking" data-test="search">
         <h2 class="booking__title">Заинтересовались?</h2>
         <p class="booking__suggestion">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button class="booking__search-button btn btn--brown btn--mid" type="button">Поиск гостиницы в Cедоне</button>
+        <button class="booking__search-button btn btn--mid" type="button">Поиск гостиницы в Cедоне</button>
       </section>
 
       <section class="subscription subscription--with-background" data-test="subscribe">
@@ -146,7 +146,7 @@
         <form class="subscription__form" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="subscription-email">Электронная почта: </label>
           <input class="subscription__email-input" type="email" name="subscription-email" id="subscription-email" placeholder="Ваш e-mail" required>
-          <button class="subscription__submit btn btn--mid" type="submit">Подписаться</button>
+          <button class="subscription__submit btn btn--mid btn--secondary" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
