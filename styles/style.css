@@ -279,6 +279,12 @@ body {
 .advantage__title {
   position: relative;
   margin-block: 0 60px;
+  min-block-size: 2lh;
+
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
 }
 
 .advantage__title::after {
@@ -298,13 +304,6 @@ body {
 
 .advantage__content--end {
   order: 1;
-}
-
-.advantage__title {
-  font-size: 24px;
-  line-height: 28px;
-  text-transform: uppercase;
-  color: #000000;
 }
 
 .advantage__image {
@@ -707,6 +706,8 @@ body {
 .field-group__legend {
   margin-block-end: 32px;
   padding: 0;
+
+  font-weight: 700;
 }
 
 .field-group__list {
