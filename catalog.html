@@ -24,16 +24,16 @@
           </li>
         </ul>
       </nav>
-      <a class="page-header__action header-action" href="#">
+      <a class="page-header__action header-action header-action--search" href="#">
         <span class="visually-hidden">Поиск</span>
       </a>
-      <a class="page-header__action header-action" href="#">
+      <a class="page-header__action header-action header-action--favorites" href="#">
         <span class="visually-hidden">Избранное</span>
-        <sup class="header-action__counter">
+        <sup class="header-action__badge">
           <span class="visually-hidden">У вас в избранном </span>12<span class="visually-hidden"> гостиниц</span>
         </sup>
       </a>
-      <a class="btn" href="#">Хочу сюда!</a>
+      <a class="page-header__want-btn btn" href="#">Хочу сюда!</a>
     </header>
 
     <main class="page__main" data-test="main">
@@ -42,7 +42,7 @@
           <h1 class="catalog-header__title">Гостиницы Седоны</h1>
           <ol class="catalog-header__breadcrumbs breadcrumbs" aria-label="Хлебные крошки">
             <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="index.html">
+              <a class="breadcrumbs__link breadcrumbs__link--home" href="index.html">
                 <span class="visually-hidden">Главная</span>
               </a>
             </li>
@@ -121,7 +121,7 @@
             </fieldset>
 
             <div class="filters__buttons">
-              <button class="filters__submit btn" type="submit">Применить</button>
+              <button class="filters__submit btn btn--secondary" type="submit">Применить</button>
               <button class="filters__reset" type="reset">Сбросить</button>
             </div>
           </form>
@@ -139,17 +139,17 @@
 
           <ul class="offers__view">
             <li class="offers__view-item">
-              <a class="view view--active" href="catalog.html?view=tile">
+              <a class="view-btn view-btn--tile view-btn--active" href="catalog.html?view=tile">
                 <span class="visually-hidden">Расположить в виде плиток</span>
               </a>
             </li>
             <li class="offers__view-item">
-              <a class="view" href="catalog.html?view=card">
+              <a class="view-btn view-btn--slideshow" href="catalog.html?view=card">
                 <span class="visually-hidden">Сделать слайд-шоу</span>
               </a>
             </li>
             <li class="offers__view-item">
-              <a class="view" href="catalog.html?view=list">
+              <a class="view-btn view-btn--list" href="catalog.html?view=list">
                 <span class="visually-hidden">Расположить в виде списка</span>
               </a>
             </li>
@@ -302,17 +302,17 @@
         <address class="socials__list-wrapper">
           <ul class="socials__list">
             <li class="socials__item">
-              <a class="socials__link" href="https://vk.com/htmlacademy" target="_blank">
+              <a class="socials__link socials__link--vk" href="https://vk.com/htmlacademy" target="_blank">
                 <span class="visually-hidden">ВКонтакте</span>
               </a>
             </li>
             <li class="socials__item">
-              <a class="socials__link" href="https://t.me/htmlacademy" target="_blank">
+              <a class="socials__link socials__link--telegram" href="https://t.me/htmlacademy" target="_blank">
                 <span class="visually-hidden" lang="en">Telegram</span>
               </a>
             </li>
             <li class="socials__item">
-              <a class="socials__link" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
+              <a class="socials__link socials__link--youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
                 <span class="visually-hidden" lang="en">YouTube</span>
               </a>
             </li>
