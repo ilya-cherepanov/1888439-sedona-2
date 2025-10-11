@@ -47,7 +47,7 @@
               </a>
             </li>
             <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link breadcrumbs__link--active">
+              <a class="breadcrumbs__link" href="catalog.html" aria-current="page">
                 Гостиницы
               </a>
             </li>
@@ -132,10 +132,15 @@
         <header class="offers__heading">
           <h2 class="offers__title">Найдено гостиниц: 38</h2>
 
-          <select class="offers__sort-by" aria-label="Сортировка">
-            <option class="offers__order-item" value="price-ascending">Сначала дешевые</option>
-            <option class="offers__order-item" value="price-descending">Сначала дорогие</option>
-          </select>
+          <div class="offers__sort-by select">
+            <select class="select__input" id="order-by">
+              <option value="price-ascending">Сначала дешевые</option>
+              <option value="price-descending">Сначала дорогие</option>
+            </select>
+            <label class="select__label" for="order-by">
+              <span class="visually-hidden">Сортировка</span>
+            </label>
+          </div>
 
           <ul class="offers__view">
             <li class="offers__view-item">
