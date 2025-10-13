@@ -295,18 +295,25 @@ body {
 }
 
 .advantages__list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
+.advantages__item--large {
+  grid-column: span 3;
+}
+
 /* advantage */
 
 .advantage {
-  display: flex;
-  block-size: 100%;
+  display: grid;
+  grid-template-rows: minmax(65px, 1fr) repeat(10, auto) minmax(65px, 1fr);
+  grid-auto-flow: column;
+  min-block-size: 385px;
+
   font-size: 18px;
   line-height: 21px;
   color: #333333;
@@ -314,19 +321,12 @@ body {
   background-color: #f0f5f9;
 }
 
-.advantage__content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-block-size: 385px;
-  inline-size: 400px;
-  padding: 85px;
-}
-
 .advantage__title {
   position: relative;
-  margin-block: 0 60px;
+  margin-block: 20px 60px;
+  padding-inline: 112px;
   min-block-size: 2lh;
+  grid-row-start: 2;
 
   font-size: 24px;
   line-height: 28px;
@@ -348,17 +348,23 @@ body {
 }
 
 .advantage__description {
-  margin: 0;
-}
-
-.advantage__content--end {
-  order: 1;
+  margin-block: 0 20px;
+  padding-inline: 85px;
 }
 
 .advantage__image {
   display: block;
-  block-size: 100%;
   object-fit: cover;
+  block-size: 100%;
+}
+
+.advantage__img-wrapper {
+  grid-column: 2 / span 2;
+  grid-row: 1 / -1;
+}
+
+.advantage__img-wrapper--start {
+  grid-column: 1 / span 2;
 }
 
 .advantage--dark {
@@ -404,8 +410,8 @@ body {
 }
 
 .services__list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   margin: 0;
   padding: 0;
 
@@ -415,11 +421,9 @@ body {
 /* service */
 
 .service {
-  inline-size: 400px;
   min-block-size: 385px;
-  block-size: 100%;
   padding-inline: 85px;
-  padding-block: 183px 60px;
+  padding-block: 183px 40px;
 
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -456,7 +460,7 @@ body {
 }
 
 .service__description {
-  margin: 0;
+  margin-block: 20px;
 }
 
 /* booking */
@@ -482,11 +486,12 @@ body {
 }
 
 .booking__suggestion {
-  margin-block: 20px 54px;
+  margin-block: 20px;
 }
 
 .booking__search-button {
   max-inline-size: 376px;
+  margin-block-start: 54px;
   margin-inline: auto;
 }
 
@@ -528,7 +533,7 @@ body {
 }
 
 .subscription__clarification {
-  margin-block: 20px 54px;
+  margin-block: 20px;
 }
 
 .subscription--with-background,
@@ -538,6 +543,7 @@ body {
 
 .subscription__form {
   display: flex;
+  margin-block-start: 54px;
 
   border-radius: 4px;
 }
