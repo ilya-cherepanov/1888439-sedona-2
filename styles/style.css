@@ -99,6 +99,14 @@ body {
   position: absolute;
 }
 
+.logo:hover {
+  filter: opacity(0.6);
+}
+
+.logo:active {
+  filter: opacity(0.3);
+}
+
 /* main-navigation */
 
 .main-navigation {
@@ -1566,6 +1574,142 @@ body {
   line-height: 26px;
   color: #000000;
   text-decoration: none;
+}
+
+/* modal */
+
+.modal {
+  padding-block: 64px;
+  padding-inline: 70px;
+
+  border: 0;
+  border-radius: 30px;
+  box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
+}
+
+.modal::backdrop {
+  background-color: rgba(242, 242, 242, 0.8);
+}
+
+.modal__close-btn {
+  position: relative;
+
+  float: inline-end;
+  margin-inline-end: -18px;
+  inline-size: 52px;
+  block-size: 52px;
+
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: 700;
+
+  border: 0;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+}
+
+.modal__close-btn::before {
+  content: "";
+
+  position: absolute;
+  inset-block-start: 50%;
+  inset-inline-start: 50%;
+
+  display: block;
+  block-size: 20px;
+  inline-size: 20px;
+  margin-block-start: -10px;
+  margin-inline-start: -10px;
+
+  background-image: url("../images/icons/cross.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.modal__close-btn:focus {
+  background-color: #e6e6e6;
+}
+
+@supports selector(:focus-visible) {
+  .modal__close-btn:focus {
+    background-color: #f2f2f2;
+  }
+
+  .modal__close-btn:focus-visible {
+    background-color: #e6e6e6;
+  }
+}
+
+.modal__close-btn:hover {
+  background-color: #e6e6e6;
+}
+
+.modal__close-btn:active {
+  background-color: #e6e6e6;
+}
+
+.modal__close-btn:active::before {
+  filter: opacity(0.3);
+}
+
+.modal__content {
+  min-inline-size: 577px;
+}
+
+.modal__title {
+  margin-block: 0 64px;
+
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+/* find-form */
+
+.find-form {
+  display: grid;
+  grid-template-columns: 137px 110px 1fr 132px 110px;
+  grid-template-rows: repeat(3, minmax(96px, auto));
+  align-items: start;
+
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: 700;
+}
+
+.find-form__label {
+  text-transform: capitalize;
+}
+
+.find-form__label--children {
+  grid-column: 4;
+}
+
+.find-form .commented-input {
+  grid-column: span 4;
+}
+
+.find-form__submit {
+  grid-column: 1 / -1;
+}
+
+
+/* incremental-input */
+
+.incremental-input {
+  display: flex;
+}
+
+.incremental-input__input {
+  inline-size: 100%;
+}
+
+.incremental-input__btn {
+  inline-size: 40px;
 }
 
 /* button */

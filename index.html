@@ -163,5 +163,53 @@
         </a>
       </p>
     </footer>
+
+    <dialog class="modal">
+      <button class="modal__close-btn" type="button">
+        <span class="visually-hidden">Закрыть окно</span>
+      </button>
+
+      <section class="modal__content">
+        <h2 class="modal__title">Поиск гостиницы в Седоне</h2>
+
+        <form class="find-form" action="https://echo.htmlacademy.ru" method="post">
+          <label class="find-form__label" for="arrival-date">Дата заезда:</label>
+          <div class="commented-input">
+            <input type="date" id="arrival-date" name="arrival-date" aria-describedby="arrival-date-description">
+            <p class="commented-input__description" id="arrival-date-description">Мы не можем отправить вас в прошлое.</p>
+          </div>
+
+          <label class="find-form__label" for="departure-date">Дата выезда:</label>
+          <div class="commented-input">
+            <input type="date" id="departure-date" name="departure-date" aria-describedby="departure-date-description">
+            <p class="commented-input__description" id="departure-date-description">На эти даты есть свободные номера. Пока есть.</p>
+          </div>
+
+          <label class="find-form__label" for="adult-count">Взрослые:</label>
+          <div class="incremental-input">
+            <button class="incremental-input__btn incremental-input__btn--dec" type="button">
+              <span class="visually-hidden">Уменьшить на 1</span>
+            </button>
+            <input class="incremental-input__input" type="number" id="adult-count" name="adult-count">
+            <button class="incremental-input__btn incremental-input__btn--inc" type="button">
+              <span class="visually-hidden">Увеличить на 1</span>
+            </button>
+          </div>
+
+          <label class="find-form__label find-form__label--children" for="children-count">Дети:</label>
+          <div class="incremental-input">
+            <button class="incremental-input__btn incremental-input__btn--dec" type="button">
+              <span class="visually-hidden">Уменьшить на 1</span>
+            </button>
+            <input class="incremental-input__input" type="number" id="children-count" name="children-count">
+            <button class="incremental-input__btn incremental-input__btn--inc" type="button">
+              <span class="visually-hidden">Увеличить на 1</span>
+            </button>
+          </div>
+
+          <button class="find-form__submit btn btn--secondary btn--large" type="submit">Найти</button>
+        </form>
+      </section>
+    </dialog>
   </body>
 </html>
