@@ -5,6 +5,8 @@
     <title>Седона</title>
     <link rel="preload" href="fonts/ptsans-400.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/ptsans-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="styles/style.css">
   </head>
 
@@ -59,7 +61,7 @@
         <h2 class="advantages__title">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</h2>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--large advantage advantage--dark">
-            <h3 class="advantage__title">Настоящий городок</h3>
+            <h3 class="advantage__title">Настоящий<br> городок</h3>
             <p class="advantage__description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             <picture class="advantage__img-wrapper">
               <source type="image/avif" srcset="images/city.avif 1x, images/city@2x.avif 2x">
@@ -92,33 +94,33 @@
       </section>
 
       <section class="page__services services">
-        <h2 class="services__title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
+        <h2 class="services__title">Приезжайте в Седону отдохнуть в&nbsp;комфорте и уюте!</h2>
         <p class="services__staff">Опытный персонал и качественное обслуживание!</p>
         <ul class="services__list">
           <li class="services__item service service--dark service--housing">
             <h3 class="service__title">Жильё</h3>
-            <p class="service__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            <p class="service__description">Рекомендуем пожить в&nbsp;настоящем мотеле,<br> всё как в кино!</p>
           </li>
           <li class="services__item service service--eating">
             <h3 class="service__title">Еда</h3>
-            <p class="service__description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+            <p class="service__description">Всегда заказывайте<br> топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li class="services__item service service--dark service--souvenir">
             <h3 class="service__title">Сувениры</h3>
-            <p class="service__description">Не только китайского, но и настоящего местного производства!</p>
+            <p class="service__description">Не только китайского, но&nbsp;и&nbsp;настоящего местного производства!</p>
           </li>
         </ul>
       </section>
 
       <section class="booking" data-test="search">
         <h2 class="booking__title">Заинтересовались?</h2>
-        <p class="booking__suggestion">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button class="booking__search-button btn btn--mid" type="button">Поиск гостиницы в Cедоне</button>
+        <p class="booking__suggestion">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <button class="booking__search-button btn btn--mid" type="button" commandfor="find-modal" command="show-modal">Поиск гостиницы в Cедоне</button>
       </section>
 
       <section class="subscription subscription--with-background" data-test="subscribe">
         <h2 class="subscription__title">Подпишитесь на рассылку</h2>
-        <p class="subscription__clarification">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <p class="subscription__clarification">Только полезная информация и никакого спама, честное&nbsp;бойскаутское!</p>
         <form class="subscription__form" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="subscription-email">Электронная почта: </label>
           <input class="subscription__email-input" type="email" name="subscription-email" id="subscription-email" placeholder="Ваш e-mail" required>
@@ -164,8 +166,8 @@
       </p>
     </footer>
 
-    <dialog class="modal">
-      <button class="modal__close-btn" type="button">
+    <dialog class="modal" id="find-modal">
+      <button class="modal__close-btn" type="button" commandfor="find-modal" command="close">
         <span class="visually-hidden">Закрыть окно</span>
       </button>
 
@@ -174,14 +176,14 @@
 
         <form class="find-form" action="https://echo.htmlacademy.ru" method="post">
           <label class="find-form__label" for="arrival-date">Дата заезда:</label>
-          <div class="commented-input">
-            <input type="date" id="arrival-date" name="arrival-date" aria-describedby="arrival-date-description">
+          <div class="commented-input commented-input--invalid">
+            <input class="commented-input__input" type="text" id="arrival-date" name="arrival-date" aria-describedby="arrival-date-description" placeholder="Укажите дату" value="27 апреля 2020">
             <p class="commented-input__description" id="arrival-date-description">Мы не можем отправить вас в прошлое.</p>
           </div>
 
           <label class="find-form__label" for="departure-date">Дата выезда:</label>
           <div class="commented-input">
-            <input type="date" id="departure-date" name="departure-date" aria-describedby="departure-date-description">
+            <input class="commented-input__input" type="text" id="departure-date" name="departure-date" aria-describedby="departure-date-description" placeholder="Укажите дату" value="1 сентября 2023">
             <p class="commented-input__description" id="departure-date-description">На эти даты есть свободные номера. Пока есть.</p>
           </div>
 
@@ -190,18 +192,26 @@
             <button class="incremental-input__btn incremental-input__btn--dec" type="button">
               <span class="visually-hidden">Уменьшить на 1</span>
             </button>
-            <input class="incremental-input__input" type="number" id="adult-count" name="adult-count">
+            <input class="incremental-input__input" type="number" id="adult-count" name="adult-count" placeholder="1" value="2">
             <button class="incremental-input__btn incremental-input__btn--inc" type="button">
               <span class="visually-hidden">Увеличить на 1</span>
             </button>
           </div>
 
-          <label class="find-form__label find-form__label--children" for="children-count">Дети:</label>
+          <label class="find-form__label find-form__label--children" for="children-count">
+            Дети:
+            <span class="info-tooltip">
+              <button class="info-tooltip__toggle" type="button" aria-labelledby="children-tooltip-label"></button>
+              <span class="info-tooltip__content" id="children-tooltip-label" role="tooltip">
+                Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+              </span>
+            </span>
+          </label>
           <div class="incremental-input">
             <button class="incremental-input__btn incremental-input__btn--dec" type="button">
               <span class="visually-hidden">Уменьшить на 1</span>
             </button>
-            <input class="incremental-input__input" type="number" id="children-count" name="children-count">
+            <input class="incremental-input__input" type="number" id="children-count" name="children-count" placeholder="0" value="2">
             <button class="incremental-input__btn incremental-input__btn--inc" type="button">
               <span class="visually-hidden">Увеличить на 1</span>
             </button>
