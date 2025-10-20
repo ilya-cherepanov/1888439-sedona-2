@@ -1813,7 +1813,7 @@ body:has(.modal[open]) {
 .incremental-input__input:disabled,
 .incremental-input__input:disabled:hover {
   background-color: #f2f2f2;
-  filter: opacity(0.3)
+  filter: opacity(0.3);
 }
 
 .incremental-input__input::-webkit-outer-spin-button,
