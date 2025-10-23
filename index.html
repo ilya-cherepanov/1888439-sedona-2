@@ -11,160 +11,162 @@
   </head>
 
   <body class="page page--index">
-    <header class="page__header page-header" data-test="header">
-      <a class="page-header__logo logo" href="index.html" aria-current="page">
-        <img class="logo__img" src="images/sedona-logo.svg" alt="Логотип сайта" width="140" height="70">
-      </a>
-      <nav class="page-header__navigation main-navigation">
-        <ul class="main-navigation__list">
-          <li class="main-navigation__item">
-            <a class="main-navigation__link main-navigation__link--active" href="index.html" aria-current="page">Главная</a>
-          </li>
-          <li class="main-navigation__item">
-            <a class="main-navigation__link" href="#">О Cедоне</a>
-          </li>
-          <li class="main-navigation__item">
-            <a class="main-navigation__link" href="catalog.html">Гостиницы</a>
-          </li>
-        </ul>
-      </nav>
-      <a class="page-header__action header-action header-action--search" href="#">
-        <span class="visually-hidden">Поиск</span>
-      </a>
-      <a class="page-header__action header-action header-action--favorites" href="#">
-        <span class="visually-hidden">Избранное</span>
-        <sup class="header-action__badge">
-          <span class="visually-hidden">У вас в избранном </span>12<span class="visually-hidden"> гостиниц</span>
-        </sup>
-      </a>
-      <a class="page-header__want-btn btn" href="#">Хочу сюда!</a>
-    </header>
-
-    <main class="page__main" data-test="main">
-      <hgroup class="page__heading page-heading">
-        <h1 class="visually-hidden">Седона</h1>
-        <p class="page-heading__slogan">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-      </hgroup>
-
-      <div class="page__hero hero" data-test="hero">
-        <picture class="hero__image-wrapper">
-          <source type="image/avif" srcset="images/hero-background.avif 1x, images/hero-background@2x.avif 2x">
-          <source type="image/webp" srcset="images/hero-background.webp 1x, images/hero-background@2x.webp 2x">
-          <img class="hero__image" src="images/hero-background.jpg" srcset="images/hero-background@2x.jpg 2x" alt="Каньон Седоны" width="1200" height="485">
-        </picture>
-        <div class="hero__content">
-          <img class="hero__description" src="images/welcome.svg" lang="en" alt="Welcome to the gorgeous Sedona! 'Because the Grand Canyon sucks!'" width="458" height="352">
-        </div>
-      </div>
-
-      <section class="page__advantages advantages" data-test="advantages">
-        <h2 class="advantages__title">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</h2>
-        <ul class="advantages__list">
-          <li class="advantages__item advantages__item--large advantage advantage--dark">
-            <h3 class="advantage__title">Настоящий<br> городок</h3>
-            <p class="advantage__description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            <picture class="advantage__img-wrapper">
-              <source type="image/avif" srcset="images/city.avif 1x, images/city@2x.avif 2x">
-              <source type="image/webp" srcset="images/city.webp 1x, images/city@2x.webp 2x">
-              <img class="advantage__image" src="images/city.jpg" srcset="images/city@2x.jpg 2x" alt="Город Седона" width="800" height="385">
-            </picture>
-          </li>
-          <li class="advantages__item advantage">
-            <h3 class="advantage__title">Небольшая площадь</h3>
-            <p class="advantage__description">Все достопримечательности находятся очень близко</p>
-          </li>
-          <li class="advantages__item advantage advantage--mid-light">
-            <h3 class="advantage__title">Красивая дорога</h3>
-            <p class="advantage__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </li>
-          <li class="advantages__item advantage">
-            <h3 class="advantage__title">Мало туристов</h3>
-            <p class="advantage__description">Большинство едет в Гранд Каньон и толпится там</p>
-          </li>
-          <li class="advantages__item advantages__item--large advantage advantage--dark">
-            <h3 class="advantage__title">Там есть мост&nbsp;дьявола</h3>
-            <p class="advantage__description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-            <picture class="advantage__img-wrapper advantage__img-wrapper--start">
-              <source type="image/avif" srcset="images/devils-bridge.avif 1x, images/devils-bridge@2x.avif 2x">
-              <source type="image/webp" srcset="images/devils-bridge.webp 1x, images/devils-bridge@2x.webp 2x">
-              <img class="advantage__image" src="images/devils-bridge.jpg" srcset="images/devils-bridge@2x.jpg 2x" alt="Мост дьявола" width="800" height="385">
-            </picture>
-          </li>
-        </ul>
-      </section>
-
-      <section class="page__services services">
-        <h2 class="services__title">Приезжайте в Седону отдохнуть в&nbsp;комфорте и уюте!</h2>
-        <p class="services__staff">Опытный персонал и качественное обслуживание!</p>
-        <ul class="services__list">
-          <li class="services__item service service--dark service--housing">
-            <h3 class="service__title">Жильё</h3>
-            <p class="service__description">Рекомендуем пожить в&nbsp;настоящем мотеле,<br> всё как в кино!</p>
-          </li>
-          <li class="services__item service service--eating">
-            <h3 class="service__title">Еда</h3>
-            <p class="service__description">Всегда заказывайте<br> топовый фирменный бургер, вы не разочаруетесь!</p>
-          </li>
-          <li class="services__item service service--dark service--souvenir">
-            <h3 class="service__title">Сувениры</h3>
-            <p class="service__description">Не только китайского, но&nbsp;и&nbsp;настоящего местного производства!</p>
-          </li>
-        </ul>
-      </section>
-
-      <section class="booking" data-test="search">
-        <h2 class="booking__title">Заинтересовались?</h2>
-        <p class="booking__suggestion">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button class="booking__search-button btn btn--mid" type="button" commandfor="find-modal" command="show-modal">Поиск гостиницы в Cедоне</button>
-      </section>
-
-      <section class="subscription subscription--with-background" data-test="subscribe">
-        <h2 class="subscription__title">Подпишитесь на рассылку</h2>
-        <p class="subscription__clarification">Только полезная информация и никакого спама, честное&nbsp;бойскаутское!</p>
-        <form class="subscription__form" action="https://echo.htmlacademy.ru" method="post">
-          <label class="visually-hidden" for="subscription-email">Электронная почта: </label>
-          <input class="subscription__email-input" type="email" name="subscription-email" id="subscription-email" placeholder="Ваш e-mail" required>
-          <button class="subscription__submit btn btn--mid btn--secondary" type="submit">Подписаться</button>
-        </form>
-      </section>
-    </main>
-
-    <footer class="page-footer" data-test="footer">
-      <section class="page-footer__socials socials">
-        <h2 class="visually-hidden">Мы в социальных сетях</h2>
-        <address class="socials__list-wrapper">
-          <ul class="socials__list">
-            <li class="socials__item">
-              <a class="socials__link socials__link--vk" href="https://vk.com/htmlacademy" target="_blank">
-                <span class="visually-hidden">ВКонтакте</span>
-              </a>
+    <div class="page__container">
+      <header class="page__header page-header" data-test="header">
+        <a class="page-header__logo logo" href="index.html" aria-current="page">
+          <img class="logo__img" src="images/sedona-logo.svg" alt="Логотип сайта" width="140" height="70">
+        </a>
+        <nav class="page-header__navigation main-navigation">
+          <ul class="main-navigation__list">
+            <li class="main-navigation__item">
+              <a class="main-navigation__link main-navigation__link--active" href="index.html" aria-current="page">Главная</a>
             </li>
-            <li class="socials__item">
-              <a class="socials__link socials__link--telegram" href="https://t.me/htmlacademy" target="_blank">
-                <span class="visually-hidden" lang="en">Telegram</span>
-              </a>
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="#">О Cедоне</a>
             </li>
-            <li class="socials__item">
-              <a class="socials__link socials__link--youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
-                <span class="visually-hidden" lang="en">YouTube</span>
-              </a>
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
+        </nav>
+        <a class="page-header__action header-action header-action--search" href="#">
+          <span class="visually-hidden">Поиск</span>
+        </a>
+        <a class="page-header__action header-action header-action--favorites" href="#">
+          <span class="visually-hidden">Избранное</span>
+          <sup class="header-action__badge">
+            <span class="visually-hidden">У вас в избранном </span>12<span class="visually-hidden"> гостиниц</span>
+          </sup>
+        </a>
+        <a class="page-header__want-btn btn" href="#">Хочу сюда!</a>
+      </header>
+
+      <main class="page__main" data-test="main">
+        <hgroup class="page__heading page-heading">
+          <h1 class="visually-hidden">Седона</h1>
+          <p class="page-heading__slogan">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+        </hgroup>
+
+        <div class="page__hero hero" data-test="hero">
+          <picture class="hero__image-wrapper">
+            <source type="image/avif" srcset="images/hero-background.avif 1x, images/hero-background@2x.avif 2x">
+            <source type="image/webp" srcset="images/hero-background.webp 1x, images/hero-background@2x.webp 2x">
+            <img class="hero__image" src="images/hero-background.jpg" srcset="images/hero-background@2x.jpg 2x" alt="Каньон Седоны" width="1200" height="485">
+          </picture>
+          <div class="hero__content">
+            <img class="hero__description" src="images/welcome.svg" lang="en" alt="Welcome to the gorgeous Sedona! 'Because the Grand Canyon sucks!'" width="458" height="352">
+          </div>
+        </div>
+
+        <section class="page__advantages advantages" data-test="advantages">
+          <h2 class="advantages__title">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</h2>
+          <ul class="advantages__list">
+            <li class="advantages__item advantages__item--large advantage advantage--dark">
+              <h3 class="advantage__title">Настоящий городок</h3>
+              <p class="advantage__description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              <picture class="advantage__img-wrapper">
+                <source type="image/avif" srcset="images/city.avif 1x, images/city@2x.avif 2x">
+                <source type="image/webp" srcset="images/city.webp 1x, images/city@2x.webp 2x">
+                <img class="advantage__image" src="images/city.jpg" srcset="images/city@2x.jpg 2x" alt="Город Седона" width="800" height="385">
+              </picture>
+            </li>
+            <li class="advantages__item advantage">
+              <h3 class="advantage__title">Небольшая площадь</h3>
+              <p class="advantage__description">Все достопримечательности находятся очень близко</p>
+            </li>
+            <li class="advantages__item advantage advantage--mid-light">
+              <h3 class="advantage__title">Красивая дорога</h3>
+              <p class="advantage__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </li>
+            <li class="advantages__item advantage">
+              <h3 class="advantage__title">Мало туристов</h3>
+              <p class="advantage__description">Большинство едет в Гранд Каньон и толпится там</p>
+            </li>
+            <li class="advantages__item advantages__item--large advantage advantage--dark">
+              <h3 class="advantage__title">Там есть мост&nbsp;дьявола</h3>
+              <p class="advantage__description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+              <picture class="advantage__img-wrapper advantage__img-wrapper--start">
+                <source type="image/avif" srcset="images/devils-bridge.avif 1x, images/devils-bridge@2x.avif 2x">
+                <source type="image/webp" srcset="images/devils-bridge.webp 1x, images/devils-bridge@2x.webp 2x">
+                <img class="advantage__image" src="images/devils-bridge.jpg" srcset="images/devils-bridge@2x.jpg 2x" alt="Мост дьявола" width="800" height="385">
+              </picture>
+            </li>
+          </ul>
+        </section>
+
+        <section class="page__services services">
+          <h2 class="services__title">Приезжайте в Седону отдохнуть в&nbsp;комфорте и уюте!</h2>
+          <p class="services__staff">Опытный персонал и качественное обслуживание!</p>
+          <ul class="services__list">
+            <li class="services__item service service--dark service--housing">
+              <h3 class="service__title">Жильё</h3>
+              <p class="service__description">Рекомендуем пожить в&nbsp;настоящем мотеле,<br> всё как в кино!</p>
+            </li>
+            <li class="services__item service service--eating">
+              <h3 class="service__title">Еда</h3>
+              <p class="service__description">Всегда заказывайте<br> топовый фирменный бургер, вы не разочаруетесь!</p>
+            </li>
+            <li class="services__item service service--dark service--souvenir">
+              <h3 class="service__title">Сувениры</h3>
+              <p class="service__description">Не только китайского, но&nbsp;и&nbsp;настоящего местного производства!</p>
+            </li>
+          </ul>
+        </section>
+
+        <section class="booking" data-test="search">
+          <h2 class="booking__title">Заинтересовались?</h2>
+          <p class="booking__suggestion">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <button class="booking__search-button btn btn--mid" type="button" commandfor="find-modal" command="show-modal">Поиск гостиницы в Cедоне</button>
+        </section>
+
+        <section class="subscription subscription--with-background" data-test="subscribe">
+          <h2 class="subscription__title">Подпишитесь на рассылку</h2>
+          <p class="subscription__clarification">Только полезная информация и никакого спама, честное&nbsp;бойскаутское!</p>
+          <form class="subscription__form" action="https://echo.htmlacademy.ru" method="post">
+            <label class="visually-hidden" for="subscription-email">Электронная почта: </label>
+            <input class="subscription__email-input" type="email" name="subscription-email" id="subscription-email" placeholder="Ваш e-mail" required>
+            <button class="subscription__submit btn btn--mid btn--secondary" type="submit">Подписаться</button>
+          </form>
+        </section>
+      </main>
+
+      <footer class="page-footer" data-test="footer">
+        <section class="page-footer__socials socials">
+          <h2 class="visually-hidden">Мы в социальных сетях</h2>
+          <address class="socials__list-wrapper">
+            <ul class="socials__list">
+              <li class="socials__item">
+                <a class="socials__link socials__link--vk" href="https://vk.com/htmlacademy" target="_blank">
+                  <span class="visually-hidden">ВКонтакте</span>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link socials__link--telegram" href="https://t.me/htmlacademy" target="_blank">
+                  <span class="visually-hidden" lang="en">Telegram</span>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link socials__link--youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
+                  <span class="visually-hidden" lang="en">YouTube</span>
+                </a>
+              </li>
+            </ul>
+          </address>
+        </section>
+
+        <address class="page-footer__phone">
+          <a class="page-footer__phone-number" href="tel:+78128121212">
+            <span class="visually-hidden">Позвоните по номеру: </span>+7 (812) 812-12-12
+          </a>
         </address>
-      </section>
 
-      <address class="page-footer__phone">
-        <a class="page-footer__phone-number" href="tel:+78128121212">
-          <span class="visually-hidden">Позвоните по номеру: </span>+7 (812) 812-12-12
-        </a>
-      </address>
-
-      <p class="page-footer__made-by">
-        <a class="htmlacademy-link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
-          <span class="visually-hidden">Сделано в .html academy</span>
-        </a>
-      </p>
-    </footer>
+        <p class="page-footer__made-by">
+          <a class="htmlacademy-link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
+            <span class="visually-hidden">Сделано в .html academy</span>
+          </a>
+        </p>
+      </footer>
+    </div>
 
     <dialog class="modal" id="find-modal">
       <button class="modal__close-btn" type="button" commandfor="find-modal" command="close">
@@ -177,13 +179,13 @@
         <form class="find-form" action="https://echo.htmlacademy.ru" method="post">
           <label class="find-form__label" for="arrival-date">Дата заезда:</label>
           <div class="commented-input commented-input--invalid">
-            <input class="commented-input__input" type="text" id="arrival-date" name="arrival-date" aria-describedby="arrival-date-description" placeholder="Укажите дату" value="27 апреля 2020">
+            <input class="commented-input__input" type="text" id="arrival-date" name="arrival-date" aria-describedby="arrival-date-description" placeholder="Укажите дату" value="27 апреля 2020" required>
             <p class="commented-input__description" id="arrival-date-description">Мы не можем отправить вас в прошлое.</p>
           </div>
 
           <label class="find-form__label" for="departure-date">Дата выезда:</label>
           <div class="commented-input">
-            <input class="commented-input__input" type="text" id="departure-date" name="departure-date" aria-describedby="departure-date-description" placeholder="Укажите дату" value="1 сентября 2023">
+            <input class="commented-input__input" type="text" id="departure-date" name="departure-date" aria-describedby="departure-date-description" placeholder="Укажите дату" value="1 сентября 2023" required>
             <p class="commented-input__description" id="departure-date-description">На эти даты есть свободные номера. Пока есть.</p>
           </div>
 
@@ -192,7 +194,7 @@
             <button class="incremental-input__btn incremental-input__btn--dec" type="button">
               <span class="visually-hidden">Уменьшить на 1</span>
             </button>
-            <input class="incremental-input__input" type="number" id="adult-count" name="adult-count" placeholder="1" value="2">
+            <input class="incremental-input__input" type="number" id="adult-count" name="adult-count" placeholder="1" min="1" required value="2">
             <button class="incremental-input__btn incremental-input__btn--inc" type="button">
               <span class="visually-hidden">Увеличить на 1</span>
             </button>
@@ -211,7 +213,7 @@
             <button class="incremental-input__btn incremental-input__btn--dec" type="button">
               <span class="visually-hidden">Уменьшить на 1</span>
             </button>
-            <input class="incremental-input__input" type="number" id="children-count" name="children-count" placeholder="0" value="2">
+            <input class="incremental-input__input" type="number" id="children-count" name="children-count" placeholder="0" min="1" value="2">
             <button class="incremental-input__btn incremental-input__btn--inc" type="button">
               <span class="visually-hidden">Увеличить на 1</span>
             </button>
