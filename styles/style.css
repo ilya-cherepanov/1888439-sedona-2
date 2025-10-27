@@ -382,10 +382,8 @@ body:has(.modal[open]) {
 .advantage__title {
   position: relative;
 
-  justify-self: center;
   margin-block: 20px 62px;
-  padding-inline: 85px;
-  inline-size: min-content;
+  padding-inline: 112px;
   min-block-size: 2lh;
   grid-row-start: 2;
 
@@ -393,6 +391,7 @@ body:has(.modal[open]) {
   line-height: 28px;
   text-transform: uppercase;
   color: #000000;
+  hyphens: auto;
 }
 
 .advantage__title::after {
@@ -411,6 +410,8 @@ body:has(.modal[open]) {
 .advantage__description {
   margin-block: 0 18px;
   padding-inline: 85px;
+
+  hyphens: auto;
 }
 
 .advantage__image {
@@ -521,10 +522,12 @@ body:has(.modal[open]) {
   line-height: 28px;
   color: #000000;
   text-transform: uppercase;
+  hyphens: auto;
 }
 
 .service__description {
   margin-block: 20px;
+  hyphens: auto;
 }
 
 /* booking */
@@ -1537,6 +1540,7 @@ body:has(.modal[open]) {
 
 .offer__rating {
   padding-block: 9px 8px;
+  padding-inline: 8px;
 
   font-size: 16px;
   line-height: 20px;
@@ -1547,40 +1551,35 @@ body:has(.modal[open]) {
   border-radius: 4px;
 }
 
-.offer__stars::before {
-  content: "";
+.offer__stars {
+  --star-count: 0;
 
-  display: inline-block;
-  block-size: 17px;
-  vertical-align: middle;
+  min-block-size: 20px;
+  inline-size: calc(24px * var(--star-count) - 6px);
 
   background-image: url("../images/icons/star.svg");
-  background-repeat: space no-repeat;
-  background-position: center;
+  background-repeat: repeat-x;
+  background-position: left center;
 }
 
-.offer__stars--1::before {
-  inline-size: 20px;
+.offer__stars--1 {
+  --star-count: 1;
 }
 
-.offer__stars--2::before {
-  inline-size: 44px;
+.offer__stars--2 {
+  --star-count: 2;
 }
 
-.offer__stars--3::before {
-  inline-size: 68px;
+.offer__stars--3 {
+  --star-count: 3;
 }
 
-.offer__stars--4::before {
-  inline-size: 91px;
+.offer__stars--4 {
+  --star-count: 4;
 }
 
-.offer__stars--5::before {
-  inline-size: 114px;
-}
-
-.offer__star:last-child {
-  margin-inline-end: 0;
+.offer__stars--5 {
+  --star-count: 5;
 }
 
 .offer__title,
@@ -1726,8 +1725,8 @@ body:has(.modal[open]) {
 .find-form {
   display: grid;
   grid-template-columns: 119px 1fr 52px 114px 1fr;
-  grid-template-rows: repeat(3, minmax(96px, auto));
-  column-gap: 18px;
+  grid-template-rows: repeat(3, minmax(77px, auto));
+  gap: 19px 18px;
   align-items: start;
 
   font-family: "PT Sans", sans-serif;
@@ -1740,6 +1739,7 @@ body:has(.modal[open]) {
 .find-form__label {
   padding-block: 12px;
   text-transform: capitalize;
+  hyphens: auto;
 }
 
 .find-form__label--children {
@@ -1963,10 +1963,6 @@ body:has(.modal[open]) {
 
   border: 0;
   border-radius: 50%;
-  /* background-color: #82b3d3;
-  background-image: url("../images/icons/info.svg");
-  background-repeat: no-repeat;
-  background-position: center; */
   background-image:
     linear-gradient(to bottom, #82b3d3 7px, transparent 7px, transparent 9px,
       #82b3d3 9px, #82b3d3 10px, transparent 10px, transparent 19px, #82b3d3 19px),
