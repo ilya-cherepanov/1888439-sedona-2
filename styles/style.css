@@ -1742,6 +1742,14 @@ body:has(.modal[open]) {
   hyphens: auto;
 }
 
+.find-form__label-wrapper {
+  padding-block: 12px;
+}
+
+.find-form__label-wrapper .find-form__label {
+  padding: 0;
+}
+
 .find-form__label--children {
   grid-column: 4;
 }
@@ -2001,12 +2009,12 @@ body:has(.modal[open]) {
   content: "";
 
   position: absolute;
-  inset-block-start: -17px;
+  inset-block-start: -18px;
   inset-inline-start: 50%;
 
   margin-inline-start: -10px;
 
-  border-block: 9px solid transparent;
+  border-block: 10px solid transparent;
   border-inline: 10px solid transparent;
   border-block-end-color: #333333;
 }
