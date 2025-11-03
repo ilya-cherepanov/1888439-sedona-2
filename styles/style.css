@@ -488,7 +488,7 @@ body {
 .service {
   min-block-size: 385px;
   padding-inline: 85px;
-  padding-block: 183px 40px;
+  padding-block: 183px 60px;
 
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
