@@ -1311,7 +1311,7 @@ body {
   line-height: inherit;
   color: inherit;
 
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0);
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   appearance: none;
@@ -1868,7 +1868,7 @@ body {
   block-size: 20px;
   padding: 0;
 
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0);
   border: 0;
   border-radius: 4px;
   cursor: pointer;
@@ -1964,8 +1964,8 @@ body {
   border: 0;
   border-radius: 50%;
   background-image:
-    linear-gradient(to bottom, #82b3d3 7px, transparent 7px, transparent 9px,
-      #82b3d3 9px, #82b3d3 10px, transparent 10px, transparent 19px, #82b3d3 19px),
+    linear-gradient(to bottom, #82b3d3 7px, rgba(0, 0, 0, 0) 7px, rgba(0, 0, 0, 0) 9px,
+      #82b3d3 9px, #82b3d3 10px, rgba(0, 0, 0, 0) 10px, rgba(0, 0, 0, 0) 19px, #82b3d3 19px),
     linear-gradient(to right, #82b3d3 12px, #ffffff 12px, #ffffff 14px, #82b3d3 14px);
   cursor: help;
 }
@@ -2006,8 +2006,8 @@ body {
 
   margin-inline-start: -10px;
 
-  border-block: 10px solid transparent;
-  border-inline: 10px solid transparent;
+  border-block: 10px solid rgba(0, 0, 0, 0);
+  border-inline: 10px solid rgba(0, 0, 0, 0);
   border-block-end-color: #333333;
 }
 
