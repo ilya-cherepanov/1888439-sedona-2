@@ -1305,7 +1305,9 @@ body {
   background-color: rgba(0, 0, 0, 0);
   border: 2px solid #e5e5e5;
   border-radius: 4px;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 .select__input:hover {
@@ -1657,8 +1659,8 @@ body {
   float: right;
   margin-inline: 20px -18px;
   margin-block-end: 20px;
-  inline-size: 53px;
-  block-size: 53px;
+  inline-size: 52px;
+  block-size: 52px;
 
   border: 0;
   border-radius: 50%;
@@ -1752,7 +1754,7 @@ body {
 }
 
 .find-form__label-wrapper {
-  padding-block: 12px;
+  padding-block: 11px;
 }
 
 .find-form__label-wrapper .find-form__label {
