@@ -48,14 +48,7 @@
         </hgroup>
 
         <div class="page__hero hero" data-test="hero">
-          <picture class="hero__image-wrapper">
-            <source type="image/avif" srcset="images/hero-background.avif 1x, images/hero-background@2x.avif 2x">
-            <source type="image/webp" srcset="images/hero-background.webp 1x, images/hero-background@2x.webp 2x">
-            <img class="hero__image" src="images/hero-background.jpg" srcset="images/hero-background@2x.jpg 2x" alt="Каньон Седоны" width="1200" height="485">
-          </picture>
-          <div class="hero__content">
-            <img class="hero__description" src="images/welcome.svg" lang="en" alt="Welcome to the gorgeous Sedona! 'Because the Grand Canyon sucks!'" width="458" height="352">
-          </div>
+          <img class="hero__text" src="images/welcome.svg" lang="en" alt="Welcome to the gorgeous Sedona! 'Because the Grand Canyon sucks!'" width="458" height="352">
         </div>
 
         <section class="page__advantages advantages" data-test="advantages">
@@ -116,7 +109,7 @@
         <section class="booking" data-test="search">
           <h2 class="booking__title">Заинтересовались?</h2>
           <p class="booking__suggestion">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <button class="booking__search-button btn btn--mid" type="button" commandfor="find-modal" command="show-modal">Поиск гостиницы в Cедоне</button>
+          <button class="booking__search-button btn btn--mid" type="button">Поиск гостиницы в Cедоне</button>
         </section>
 
         <section class="subscription subscription--with-background" data-test="subscribe">
@@ -168,8 +161,8 @@
       </footer>
     </div>
 
-    <dialog class="modal" id="find-modal" data-test="modal" open>
-      <button class="modal__close-btn" type="button" commandfor="find-modal" command="close">
+    <dialog class="modal" data-test="modal" open>
+      <button class="modal__close-btn" type="button">
         <span class="visually-hidden">Закрыть окно</span>
       </button>
 
